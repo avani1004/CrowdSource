@@ -3,273 +3,291 @@
 
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/83b79cc9a413873b9c2145d6f1b2d5c78bbde74c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="58b12bdb21a84f22e0dc3b047aeceb0a546b1b44">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a8ec0e30bed57b74c864d4acd00c95ff2d579969/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/2033c206c0959a1a4983e8536bc07e5b3cf28110/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1cde19cbf9be88547ab4b7f03668eac5d91bd611">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7d00efc92ac483a6a16b17744b68b018105412b3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_f3e703d60d5ee7fb770411c024da9566ef7e4bcf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/b563a1b0c8ad368516a89dfdadd5d9fb24a7b928/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="42c5ee016c8815db37d662f18c497aee13150f9e">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6eb079c81647cc94a421b3f0b52e5f8e337fd063/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/ef8aac28223c382c0199c904f1ea2fd60d1d6fad/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="869a1d15fa9d8e8aa36587b042f553c1baea46bc">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcb83671662647c7222980dbe57452bc1b428c3a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/e824eb94e165f2b927588d6a336d5a44c3c28948/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a37fc31c5ceeaa4532a37358add1b189d8db4af1">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aec354b465d9226698f46eb38674129b0832d728/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/aec1135c3433e2a39c66fd8f7d4f2d53b29ca41c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="508f50705b4fde51a16259f29c854201a3044516">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0c916df185a1ad68e757bfe629228b84bc5c459a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/41438234618451426f706a8942d97e310e70a163/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="47bcd0b3eac50dbe2f150987250a6507e10ef28a">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a4cd02942d7f96fa462c34c79556a05c92637bed/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.1.0_eeef0212534fb144ffb2d430bb5e695ac0cea0d2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/62c1bd89a77516ae7561ea327cca046aeceb02ed/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fc387427a76c6a9fba40a490e48d244a989690c8">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_59a79c4e468de35ab7aef46419878e169b377ffc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/54f98a379010f9bfc414c4974ed73c86526ab232/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0a64b3eddd23220aa3749f0aef282edb7d096621/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_c4630cf73e7674514705febc69339eeaf147a5c9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/7e26d19f047d1832e1243a03140957b6387a202b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="48ab283a4cda3b78eda2c149b588cb0aa0c66cc9">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_749ea9aaf2684b8089745624eb3d878b4a5263ba/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/13be12ea6e269db4c4c4c010d07a0a32f2543803/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="729a6a1975c19d7461378172c7932f5c57f1c3fe">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_27a125d513361176bba539850f64148b9235b2bc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4220890164075e4ed6296975d4eb991efc6b3de1">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c81a1df5505109c7dedf5fa2f625087580b4e5b1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/fd67a20190424fae74d912c8dad68c3ea946c46e/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_06a655d297127ee2a61dc038cc91d098f8d26570/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/a99a53e2bb6e70d9804e469ab9c03173e56437e8/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b61dfe5cb81526aed6bfdc39b0d7cba0aa194d18/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/0d0dbfd713d3557b61b4baafcc9e55a7b3532872/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7b67e360a3f97ede309703e75615a84fea74fd3c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/12526d3a75e3db5b81de199982f1aca889366dde/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9cacd27aed6fa56b01e1a21e046c166a2383cdac/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/809b42b0c0a45ae9097060fa4791c5fa7d29e2ae/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e9b8fd995f9c6c2caeb49827f0b52e0e8cc621e0">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3c636e6d40e8041ada2344923cfd2636949c234c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/547ce8ea7427fa253829baa913d732da1c60ca41/output/jars/classes.jar"
+        jar="C:\Users\bhumi\.android\build-cache\3353f222ae729e65fd552b4d1c779d96a135b1c0\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="863b37c463df79f340b5d83bbbfc63ad25612e01">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aa670b020562d220fae09118f5e8d30399c032a8/classes.dex" />
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_77e29cfa20a63d26425d0a82add74cc0f8329943\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/27f1aefa57be6dadfd6ef8b919fb2aa52148c004/output/jars/classes.jar"
+        jar="C:\Users\bhumi\.android\build-cache\3dcc7e3bf8b70aa10161ed9a01a5b2e1ed46f776\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_34d2c2af51d15a8020ef9b259d36a992324c55d2/classes.dex" />
+        sha1="48ab283a4cda3b78eda2c149b588cb0aa0c66cc9">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_03719c09a005d16279b3faf120904c44fe3935f5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/10aa9ad6db8b76940308780111aa39ac3a2455a8/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f62c4fb098a7cc00996eb9393d2a7ff1432a46a5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/1ef58416422b5a0f37418077147a4eab3612a938/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d6399340139f67ce4faba06e97f256ef0d6817c0">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b6c8b163e7bbaac425fb425bb52c852c304d1e91/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/f1dcb52c4695a195cab4cac18637282c22f9cb4e/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e4a9d8510de319af17459d3ec70e23559b83495b">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c14d6eb2e75958e5db4d2b8746aa4ab909bc304f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/038811e1069ad75a3b7f438d49f7c9ae949fe9e9/output/jars/classes.jar"
+        jar="C:\Users\bhumi\.android\build-cache\727874bca56a53b3d270b243d8b7078f83dd515c\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7613deec1f25e8aa8653a836fc88610e294a2f0f/classes.dex" />
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_660f1d0e82c1e4ba8494eeb5e449b0436cd2ae61\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/38ec9fe596a6326b7a47551ad50fabbac8eae308/output/jars/classes.jar"
+        jar="C:\Users\bhumi\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.1.0_39fcb65150ccf357bce329507d3f6296b9f541c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\babe9adda9317179f48f752035849852594222e6\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fc6cc442f4d3e6d2221d2f7794e3f569537b5060/classes.dex" />
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_945dd6554f6f8ba2436f157a288d33bc8a07587c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/037eaa389db71eaeac575313100c2a1aaf274701/output/jars/classes.jar"
+        jar="C:\Users\bhumi\.android\build-cache\fedca52c43169849a2de3e4037efd94bdb5d740b\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="da443aff9cd3c2cd75b957e0547e1ca2c4f30308">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_50425d63048c51319f8a79c33174d0f2d329f540/classes.dex" />
+        sha1="e9b8fd995f9c6c2caeb49827f0b52e0e8cc621e0">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f392de80c86a65f5a141b48fa92e448098a0963f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/.android/build-cache/2e453163cb947113c043ea79860b640d8d993300/output/jars/classes.jar"
+        jar="C:\Users\bhumi\.android\build-cache\305f34b0bbb6277e4138a4571069f69891e6a257\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="869a1d15fa9d8e8aa36587b042f553c1baea46bc">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5673c8210cea181859f48607e8599e5e46718497\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\22186c7fc101fa9c9c783f3d598ca359d7077c8e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5845481399286d1e709f1c57e3ae9278a2371630\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\bf7e97c8277188e7f588c45c950d0bd1d5e779a6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1cde19cbf9be88547ab4b7f03668eac5d91bd611">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8a05ba12b733ff381d43df878c1e4253715b052b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\e21e79ce79631825129b87023c58f40cab4d9003\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f1c52912666eec2873629ba53a9bd0a114acd656\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\6529375d637ac2e9bac0369a26a50483da518b3d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47bcd0b3eac50dbe2f150987250a6507e10ef28a">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9a3834a2554c61791b73cb4d783759d2ecbf946f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\CrowdSource\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="798625572380e079bbecbe80e9f111345c2521d4">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0cec67d76e3535b33f8dc22ec87eea47881a42d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_753ee1b3ff604d2bf9da689a380fbd8b56cb08f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\f9e97657f1ba51baf3f89621a1bd055ee92b9928\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="58b12bdb21a84f22e0dc3b047aeceb0a546b1b44">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e4b10f0bc8c340ce92e5c5dc5ac633ba876567b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\7c2347c44b80a5e4766b5d244175c757461e6cd5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b7aa0620cb4207f1cc11f8d62fca23e65cb9591f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\ac9f388c8a042f27bc7d384871410a3870d2a8c5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_45777d887778cd2a75447e4013f3662d58892679\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\659f3a4b12e1dd1bbc7280367926063e6dd6d731\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fc387427a76c6a9fba40a490e48d244a989690c8">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6e0633f2f0dee83bf531090374a26dc9fb31c6a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\31a114744621d34671ff1084d3eab8cb6311f402\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6399340139f67ce4faba06e97f256ef0d6817c0">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c442ad0dc2c2fc83bd7aac0c282ba4081f56fabe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\e2eaba01f8cba4f96f73b4d940abddbe9ae44997\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b12cd9c87c3dfb012a911b6e38d2444ed0a65e1f">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b8fa1afcd8ce6e7201007c24b5225e826227a409/classes.dex" />
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2db2e47b1a214e86ed7bd0edff5032f94a89c35d\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Users\bhumi\.android\build-cache\bce76ba021eb3ea79ea4a5b05291288deded9da4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42c5ee016c8815db37d662f18c497aee13150f9e">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3219b6ee8a327ae8485dc78f4987a0a70bb322bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\2d5ffb145e7d22a9bfe42a9b713bcf7d7b9477a7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f8e76a2477ae5805ea5002887771958528172572\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\d4ebc637d007c51dbf1208314c23f635c70be047\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4a9d8510de319af17459d3ec70e23559b83495b">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c28dc646f943843f598f915a61b7c6858430a0b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\e0ae080d97d57610ba0a52385e8941cd11a8f750\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da443aff9cd3c2cd75b957e0547e1ca2c4f30308">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7734450ba74301f738354f51d8108780bc1039f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\793d4af2cc636ecb13cce7d6a99f51764358b468\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3bcec30e8172b53dd771e7c16e73407219e0deb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\b6198a4de1a007467741ffd8aa2efb388ad2d0e8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a37fc31c5ceeaa4532a37358add1b189d8db4af1">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a0c9d9b3bb4b1dfe3be476dda88e6ef2a406cf93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\common-1.0.0_818f369be49d6d6d84e4f76b06542abb4236fc27\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\9c890913a8f6c42f5dd2a33bc41cd84cfd3ca697\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4c38e01985c4ba63dd9bbec58dd3d1b73460dc3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\c9d69901ee43118cdcf243d08223bddc9b9154db\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_30a234e9efdcd38e7c736382b48cce7845fe24f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\c02a4bfb43848e9fa14f84023dadd6a2327f9dea\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="729a6a1975c19d7461378172c7932f5c57f1c3fe">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2b79d0da40c5dc3bf6fc0c4ee6439fe2a18772aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\aeeb73d78f0b84084ecc1133365042d957b89456\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6959403a148bda846b56839759b2f47367e6d67f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\CrowdSource\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ee77c8428eb1974535283df8d04ac6816733a8c5/classes.dex" />
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1b4d73e5430389ef5661c9a4a904137a43c79f59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\common-1.0.0_829ebd2493f2ba24226490b0ba5d407de428adce\classes.dex" />
     </item>
 
 </items>
