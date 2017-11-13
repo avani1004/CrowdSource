@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/83b79cc9a413873b9c2145d6f1b2d5c78bbde74c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="58b12bdb21a84f22e0dc3b047aeceb0a546b1b44">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a8ec0e30bed57b74c864d4acd00c95ff2d579969/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/2033c206c0959a1a4983e8536bc07e5b3cf28110/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1cde19cbf9be88547ab4b7f03668eac5d91bd611">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7d00efc92ac483a6a16b17744b68b018105412b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_f3e703d60d5ee7fb770411c024da9566ef7e4bcf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/b563a1b0c8ad368516a89dfdadd5d9fb24a7b928/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42c5ee016c8815db37d662f18c497aee13150f9e">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6eb079c81647cc94a421b3f0b52e5f8e337fd063/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/ef8aac28223c382c0199c904f1ea2fd60d1d6fad/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="869a1d15fa9d8e8aa36587b042f553c1baea46bc">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcb83671662647c7222980dbe57452bc1b428c3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/e824eb94e165f2b927588d6a336d5a44c3c28948/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a37fc31c5ceeaa4532a37358add1b189d8db4af1">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aec354b465d9226698f46eb38674129b0832d728/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/aec1135c3433e2a39c66fd8f7d4f2d53b29ca41c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0c916df185a1ad68e757bfe629228b84bc5c459a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/41438234618451426f706a8942d97e310e70a163/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47bcd0b3eac50dbe2f150987250a6507e10ef28a">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a4cd02942d7f96fa462c34c79556a05c92637bed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.1.0_eeef0212534fb144ffb2d430bb5e695ac0cea0d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/62c1bd89a77516ae7561ea327cca046aeceb02ed/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fc387427a76c6a9fba40a490e48d244a989690c8">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_59a79c4e468de35ab7aef46419878e169b377ffc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/54f98a379010f9bfc414c4974ed73c86526ab232/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0a64b3eddd23220aa3749f0aef282edb7d096621/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0_c4630cf73e7674514705febc69339eeaf147a5c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/7e26d19f047d1832e1243a03140957b6387a202b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="48ab283a4cda3b78eda2c149b588cb0aa0c66cc9">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_749ea9aaf2684b8089745624eb3d878b4a5263ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/13be12ea6e269db4c4c4c010d07a0a32f2543803/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="729a6a1975c19d7461378172c7932f5c57f1c3fe">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_27a125d513361176bba539850f64148b9235b2bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4220890164075e4ed6296975d4eb991efc6b3de1">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c81a1df5505109c7dedf5fa2f625087580b4e5b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/fd67a20190424fae74d912c8dad68c3ea946c46e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_06a655d297127ee2a61dc038cc91d098f8d26570/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/a99a53e2bb6e70d9804e469ab9c03173e56437e8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b61dfe5cb81526aed6bfdc39b0d7cba0aa194d18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/0d0dbfd713d3557b61b4baafcc9e55a7b3532872/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7b67e360a3f97ede309703e75615a84fea74fd3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/12526d3a75e3db5b81de199982f1aca889366dde/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9cacd27aed6fa56b01e1a21e046c166a2383cdac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/809b42b0c0a45ae9097060fa4791c5fa7d29e2ae/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9b8fd995f9c6c2caeb49827f0b52e0e8cc621e0">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3c636e6d40e8041ada2344923cfd2636949c234c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/547ce8ea7427fa253829baa913d732da1c60ca41/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="863b37c463df79f340b5d83bbbfc63ad25612e01">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aa670b020562d220fae09118f5e8d30399c032a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/27f1aefa57be6dadfd6ef8b919fb2aa52148c004/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_34d2c2af51d15a8020ef9b259d36a992324c55d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/10aa9ad6db8b76940308780111aa39ac3a2455a8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f62c4fb098a7cc00996eb9393d2a7ff1432a46a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/1ef58416422b5a0f37418077147a4eab3612a938/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6399340139f67ce4faba06e97f256ef0d6817c0">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b6c8b163e7bbaac425fb425bb52c852c304d1e91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/f1dcb52c4695a195cab4cac18637282c22f9cb4e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4a9d8510de319af17459d3ec70e23559b83495b">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c14d6eb2e75958e5db4d2b8746aa4ab909bc304f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/038811e1069ad75a3b7f438d49f7c9ae949fe9e9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7613deec1f25e8aa8653a836fc88610e294a2f0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/38ec9fe596a6326b7a47551ad50fabbac8eae308/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fc6cc442f4d3e6d2221d2f7794e3f569537b5060/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/037eaa389db71eaeac575313100c2a1aaf274701/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da443aff9cd3c2cd75b957e0547e1ca2c4f30308">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_50425d63048c51319f8a79c33174d0f2d329f540/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/.android/build-cache/2e453163cb947113c043ea79860b640d8d993300/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b12cd9c87c3dfb012a911b6e38d2444ed0a65e1f">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b8fa1afcd8ce6e7201007c24b5225e826227a409/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ee77c8428eb1974535283df8d04ac6816733a8c5/classes.dex" />
+    </item>
+
+</items>

@@ -3,11 +3,17 @@ package com.example.android.crowdsource;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.location.places.AutocompleteFilter;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+import com.google.android.gms.maps.model.LatLng;
 
 /**
  * Created by avaniarora on 11/3/17.
@@ -19,7 +25,7 @@ public class TaskInfo extends AppCompatActivity {
     private EditText mDescription;
     private EditText mPrice;
     private  EditText mLocation;
-    //private LatLng mAddress1LatLng;
+    private LatLng mLocationLatLng;
     private String mBaseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/";
 
     @Override
@@ -34,17 +40,17 @@ public class TaskInfo extends AppCompatActivity {
         mLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("Hello", "Inside location");
+
                 try {
 
                     AutocompleteFilter typeFilter = new AutocompleteFilter.Builder()
-                            .setCountry("US")
                             .build();
 
                     Intent intent =
                             new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
-                                    .setFilter(typeFilter)
-                                    .build(AddressActivity.this);
-                    startActivityForResult(intent, PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_1);
+                                    .build(TaskInfo.this);
+                    startActivityForResult(intent,PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_1);
 
                 } catch (GooglePlayServicesRepairableException e) {
                     e.printStackTrace();
@@ -54,5 +60,23 @@ public class TaskInfo extends AppCompatActivity {
             }
         });
 
+
     }
-}
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_1) {
+            if (resultCode == RESULT_OK) {
+
+                Place place = PlaceAutocomplete.getPlace(this, data);
+
+                mLocationLatLng = place.getLatLng();
+                mLocation.setText(place.getName());
+
+            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
+
+                Toast.makeText(getApplicationContext(), PlaceAutocomplete.getStatus(this, data).toString(), Toast.LENGTH_LONG).show();
+
+            }
+        }
+}}
