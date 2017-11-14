@@ -132,6 +132,9 @@ public void login(){
                     else{
                         Toast.makeText(getApplicationContext(), "Login Successful",
                                 Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+
                     }
 
 

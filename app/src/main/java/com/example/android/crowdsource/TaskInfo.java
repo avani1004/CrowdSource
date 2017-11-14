@@ -30,6 +30,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by avaniarora on 11/3/17.
@@ -45,6 +46,7 @@ public class TaskInfo extends AppCompatActivity {
     private LatLng mLocationLatLng;
     private String mBaseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/";
     List<Map> new_entry = new LinkedList<>();
+    private DatabaseReference myRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -54,16 +56,19 @@ public class TaskInfo extends AppCompatActivity {
         mDescription = (EditText) findViewById(R.id.description);
         mPrice = (EditText) findViewById(R.id.price);
         mLocation = (EditText) findViewById(R.id.location);
+        Button done = (Button) findViewById(R.id.done);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        myRef = database.getReference();
+
         mLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("Hello", "Inside location");
 
                 try {
-
                     AutocompleteFilter typeFilter = new AutocompleteFilter.Builder()
                             .build();
-
                     Intent intent =
                             new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
                                     .build(TaskInfo.this);
@@ -77,64 +82,79 @@ public class TaskInfo extends AppCompatActivity {
             }
         });
 
-        Button done = (Button) findViewById(R.id.done);
-        done.setOnClickListener(new View.OnClickListener(){
+        done.setOnClickListener(new android.view.View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                //EditText name_photo = (EditText) findViewById(R.id.text_photo);
+            public void onClick(View view) {
 
-                String name = mNameOfTask.getText().toString();
-                String description = mDescription.getText().toString();
-                String price = mPrice.getText().toString();
-                String location = mLocation.getText().toString();
-                String lat_long = mLocationLatLng.toString();
+                Task task = new Task(mNameOfTask.getText().toString(), mDescription.getText().toString(),new Float(mPrice.getText().toString()),mLocation.getText().toString(),mLocationLatLng.toString());
+                myRef.child("tasks").child(UUID.randomUUID().toString()).setValue(task);
+                //myRef.setValue("This should bloody work now too");
 
-                Map<String, String> dump_structure = new HashMap<String, String>();
-                dump_structure.put("name_of_task", name);
-                dump_structure.put("task_description", description);
-                dump_structure.put("task_price", price);
-                dump_structure.put("task_location", location);
-                dump_structure.put("latitude_longitude", lat_long);
+                Toast.makeText(getBaseContext(), "Task Created Successfully", Toast.LENGTH_LONG).show();
 
-                new_entry.add(dump_structure);
-
-
-
-                // Write a message to the database
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("message");
-
-                //myRef.setValue();
-                myRef.push().setValue(dump_structure);
-
-                //TextView view = (TextView)findViewById(R.id.winner_text);
-
-                //TODO: reading from the firebase json
-
-//                myRef.addValueEventListener(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(DataSnapshot dataSnapshot) {
-//                        // This method is called once with the initial value and again
-//                        // whenever data at this location is updated.
-//                        value = dataSnapshot.getValue(String.class);
-//                        //Log.d(TAG, "Value is: " + value);
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(DatabaseError error) {
-//                        // Failed to read value
-//                        //Log.w(TAG, "Failed to read value.", error.toException());
-//                    }
-//                });
-
-
-
-
-
+                Intent intent = new Intent(TaskInfo.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
-
-
         });
+
+//        done.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                //EditText name_photo = (EditText) findViewById(R.id.text_photo);
+//
+//                String name = mNameOfTask.getText().toString();
+//                String description = mDescription.getText().toString();
+//                String price = mPrice.getText().toString();
+//                String location = mLocation.getText().toString();
+//                String lat_long = mLocationLatLng.toString();
+//
+//                Map<String, String> dump_structure = new HashMap<String, String>();
+//                dump_structure.put("name_of_task", name);
+//                dump_structure.put("task_description", description);
+//                dump_structure.put("task_price", price);
+//                dump_structure.put("task_location", location);
+//                dump_structure.put("latitude_longitude", lat_long);
+//
+//                new_entry.add(dump_structure);
+//
+//
+//
+//                // Write a message to the database
+//                FirebaseDatabase database = FirebaseDatabase.getInstance();
+//                DatabaseReference myRef = database.getReference("message");
+//
+//                //myRef.setValue();
+//                myRef.push().setValue(dump_structure);
+//
+//                //TextView view = (TextView)findViewById(R.id.winner_text);
+//
+//                //TODO: reading from the firebase json
+//
+////                myRef.addValueEventListener(new ValueEventListener() {
+////                    @Override
+////                    public void onDataChange(DataSnapshot dataSnapshot) {
+////                        // This method is called once with the initial value and again
+////                        // whenever data at this location is updated.
+////                        value = dataSnapshot.getValue(String.class);
+////                        //Log.d(TAG, "Value is: " + value);
+////                    }
+////
+////                    @Override
+////                    public void onCancelled(DatabaseError error) {
+////                        // Failed to read value
+////                        //Log.w(TAG, "Failed to read value.", error.toException());
+////                    }
+////                });
+//
+//
+//
+//
+//
+//            }
+//
+//
+//        });
 
 
     }

@@ -3,57 +3,57 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\bhumi\.android\build-cache\b8687f287b4a263a0d367d776b4c8a81f281883d\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d6ff091e2c6df07894e5b921671404047d70d3f7">
-        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_444b1187d6be20837c2f54c055b8fa3148e6bfb4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bhumi\.android\build-cache\29feef04d2a993f3955382c3e899df1e71a12209\output\jars\classes.jar"
+        jar="/Users/umang/.android/build-cache/9bdefd25a3c06fe56b4af6f486fb906e5c715a8d/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d90cb9610620b7631c75f1953a4956810edd4bed">
-        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_860ad4bab117fe227abf6d38f7dc21d0a8f7f3fe\classes.dex" />
+        <dex dex="/Users/umang/Documents/Fall2017/MobileApps/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8d0c36730de9148b4f312fff649f172cff49e5b0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bhumi\CrowdSource\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="/Users/umang/Documents/Fall2017/MobileApps/CrowdSource/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1e3023e9dcfb81fe7564662fbe30177e010bbe31">
-        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0cec67d76e3535b33f8dc22ec87eea47881a42d3\classes.dex" />
+        sha1="232cadc844a9ad2929c5f0f2a00e18dfaff616bc">
+        <dex dex="/Users/umang/Documents/Fall2017/MobileApps/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_943766287e1ba0640fa65e90c8b91ea89cfb60da/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bhumi\CrowdSource\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="/Users/umang/Documents/Fall2017/MobileApps/CrowdSource/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1b4d73e5430389ef5661c9a4a904137a43c79f59\classes.dex" />
+        <dex dex="/Users/umang/Documents/Fall2017/MobileApps/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_261bb1dcdf8ad54d6956d9a1f705efd88efe5ea5/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bhumi\.android\build-cache\53a672d8f1bb2c2ac5177798ec642926ebf76fd5\output\jars\classes.jar"
+        jar="/Users/umang/.android/build-cache/5752a91b1ec1db94f624fa938a90b9442148e209/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="269771e258a0d07bc8f5213f1f5ed77e8f42d72f">
-        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_75d7c626b9fcc489e399614a3320d3284a93cf2d\classes.dex" />
+        <dex dex="/Users/umang/Documents/Fall2017/MobileApps/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c5857f37b9b632f8ac3419bdd9ffeda4a1557987/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bhumi\.android\build-cache\9d5b324aea2e27debde5e24d1752c209e5f1b1a6\output\jars\classes.jar"
+        jar="/Users/umang/.android/build-cache/182e8dd1129930cb1b07a1402ebe80ebe0f4f512/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="cd1ff651ddb8608e9c4037f3d9ab475e9472abb2">
-        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_312f8e99469805c297e7603a0a871cf7b88b2d29\classes.dex" />
+        <dex dex="/Users/umang/Documents/Fall2017/MobileApps/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_01a17a1ea0209e5966f23c1d86bf5084e38ce818/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/umang/.android/build-cache/8818cf2ce239cb0040d4969381295622cae863df/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6ff091e2c6df07894e5b921671404047d70d3f7">
+        <dex dex="/Users/umang/Documents/Fall2017/MobileApps/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3a5789ad385eca8647ed118057845d69b9d959c7/classes.dex" />
     </item>
 
 </items>
