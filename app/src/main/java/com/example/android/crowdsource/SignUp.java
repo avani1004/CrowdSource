@@ -39,6 +39,12 @@ public class SignUp extends AppCompatActivity {
     private EditText mReEnterPassword;
     private Button mSignUp;
     private TextView mLoginLink;
+    String name;
+    String address;
+    String email;
+    String mobile;
+    String password;
+    String reEnterPassword;
 
     @Override
     public void onStart() {
@@ -122,25 +128,14 @@ public class SignUp extends AppCompatActivity {
         }
 
         //mSignUp.setEnabled(false);
-        String name = mName.getText().toString();
-        String address = mAddress.getText().toString();
-        String email = mEmail.getText().toString().trim();
-        String mobile = mMobile.getText().toString();
-        String password = mPassword.getText().toString().trim();
-        String reEnterPassword = mReEnterPassword.getText().toString();
+        name = mName.getText().toString();
+        address = mAddress.getText().toString();
+        email = mEmail.getText().toString().trim();
+        mobile = mMobile.getText().toString();
+        password = mPassword.getText().toString().trim();
+        reEnterPassword = mReEnterPassword.getText().toString();
 
-        //TODO: write user information to realtime database
 
-        FirebaseDatabase user_database = FirebaseDatabase.getInstance();
-        DatabaseReference user_Ref = user_database.getReference("user information");
-
-        Map<String, String> dump_structure = new HashMap<String, String>();
-        dump_structure.put("user_name", name);
-        dump_structure.put("user_address", address);
-        dump_structure.put("user_email", email);
-        dump_structure.put("user_mobile_number", mobile);
-
-        user_Ref.push().setValue(dump_structure);
 
         //TODO: write email and password for authentication to firebase
 
@@ -155,13 +150,28 @@ public class SignUp extends AppCompatActivity {
                             //FirebaseUser user = mAuth.getCurrentUser();
                             //updateUI(user);
                             Toast.makeText(getApplicationContext(), "Authentication successful, account created.",Toast.LENGTH_SHORT).show();
-
+                            write_user_information();
                         }
                         else{
                             Toast.makeText(getApplicationContext(), "Authentication failed",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
+    }
+
+    public void write_user_information(){
+        //TODO: write user information to realtime database
+
+        FirebaseDatabase user_database = FirebaseDatabase.getInstance();
+        DatabaseReference user_Ref = user_database.getReference("user information");
+
+        Map<String, String> dump_structure = new HashMap<String, String>();
+        dump_structure.put("user_name", name);
+        dump_structure.put("user_address", address);
+        dump_structure.put("user_email", email);
+        dump_structure.put("user_mobile_number", mobile);
+
+        user_Ref.push().setValue(dump_structure);
     }
 
     public boolean validate() {
