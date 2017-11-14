@@ -3,21 +3,57 @@
 
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/Documents/CrowdSource/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="C:\Users\bhumi\.android\build-cache\b8687f287b4a263a0d367d776b4c8a81f281883d\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="998430098fd7f9405a5b0c6dddaf3de8669f437f">
-        <dex dex="/Users/avaniarora/Documents/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d06b8863fd34091ea04be47b1c704ea54b1bd986/classes.dex" />
+        sha1="d6ff091e2c6df07894e5b921671404047d70d3f7">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_444b1187d6be20837c2f54c055b8fa3148e6bfb4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/Documents/CrowdSource/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Users\bhumi\.android\build-cache\29feef04d2a993f3955382c3e899df1e71a12209\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/avaniarora/Documents/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_95d24094b9dbc3618a3029f8696f414b127df89c/classes.dex" />
+        sha1="d90cb9610620b7631c75f1953a4956810edd4bed">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_860ad4bab117fe227abf6d38f7dc21d0a8f7f3fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\CrowdSource\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e3023e9dcfb81fe7564662fbe30177e010bbe31">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0cec67d76e3535b33f8dc22ec87eea47881a42d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\CrowdSource\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1b4d73e5430389ef5661c9a4a904137a43c79f59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\53a672d8f1bb2c2ac5177798ec642926ebf76fd5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="269771e258a0d07bc8f5213f1f5ed77e8f42d72f">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_75d7c626b9fcc489e399614a3320d3284a93cf2d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\.android\build-cache\9d5b324aea2e27debde5e24d1752c209e5f1b1a6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd1ff651ddb8608e9c4037f3d9ab475e9472abb2">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_312f8e99469805c297e7603a0a871cf7b88b2d29\classes.dex" />
     </item>
 
 </items>
