@@ -16,6 +16,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by avaniarora on 11/12/17.
@@ -124,7 +129,21 @@ public class SignUp extends AppCompatActivity {
         String password = mPassword.getText().toString().trim();
         String reEnterPassword = mReEnterPassword.getText().toString();
 
-        //TODO: write the credentials to database
+        //TODO: write user information to realtime database
+
+        FirebaseDatabase user_database = FirebaseDatabase.getInstance();
+        DatabaseReference user_Ref = user_database.getReference("user information");
+
+        Map<String, String> dump_structure = new HashMap<String, String>();
+        dump_structure.put("user_name", name);
+        dump_structure.put("user_address", address);
+        dump_structure.put("user_email", email);
+        dump_structure.put("user_mobile_number", mobile);
+
+        user_Ref.push().setValue(dump_structure);
+
+        //TODO: write email and password for authentication to firebase
+
 
         //Toast.makeText(getApplicationContext(), "Here's a toast "+ email,Toast.LENGTH_SHORT).show();
 
