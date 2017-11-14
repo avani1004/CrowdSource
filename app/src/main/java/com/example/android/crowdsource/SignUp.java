@@ -11,6 +11,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.location.places.AutocompleteFilter;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -39,12 +45,15 @@ public class SignUp extends AppCompatActivity {
     private EditText mReEnterPassword;
     private Button mSignUp;
     private TextView mLoginLink;
+    private LatLng mLocationLatLng;
+    int PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_2 = 2;
     String name;
     String address;
     String email;
     String mobile;
     String password;
     String reEnterPassword;
+    String lat_long;
 
     @Override
     public void onStart() {
@@ -63,6 +72,7 @@ public class SignUp extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_registration);
         mName = (EditText) findViewById(R.id.input_name);
@@ -72,7 +82,31 @@ public class SignUp extends AppCompatActivity {
         mPassword = (EditText) findViewById(R.id.input_password);
         mReEnterPassword = (EditText) findViewById(R.id.input_reEnterPassword);
         mSignUp = (Button) findViewById(R.id.btn_signup);
+
         mLoginLink = (TextView) findViewById(R.id.link_login);
+
+        mAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Hello", "Inside location");
+
+                try {
+
+                    AutocompleteFilter typeFilter = new AutocompleteFilter.Builder()
+                            .build();
+
+                    Intent intent =
+                            new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
+                                    .build(SignUp.this);
+                    startActivityForResult(intent,PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_2);
+
+                } catch (GooglePlayServicesRepairableException e) {
+                    e.printStackTrace();
+                } catch (GooglePlayServicesNotAvailableException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         mSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,6 +125,7 @@ public class SignUp extends AppCompatActivity {
 
             }
         });
+
 
         //FIREBASE :
 
@@ -118,7 +153,29 @@ public class SignUp extends AppCompatActivity {
 
 
 
+
+
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_2) {
+            if (resultCode == RESULT_OK) {
+
+                Place place = PlaceAutocomplete.getPlace(this, data);
+
+                mLocationLatLng = place.getLatLng();
+                mAddress.setText(place.getName());
+
+            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
+
+                Toast.makeText(getApplicationContext(), PlaceAutocomplete.getStatus(this, data).toString(), Toast.LENGTH_LONG).show();
+
+            }
+        }
+    }
+
+
 
     public void signup() {
         if (!validate()) {
@@ -134,6 +191,7 @@ public class SignUp extends AppCompatActivity {
         mobile = mMobile.getText().toString();
         password = mPassword.getText().toString().trim();
         reEnterPassword = mReEnterPassword.getText().toString();
+        lat_long = mLocationLatLng.toString();
 
 
 
@@ -170,9 +228,13 @@ public class SignUp extends AppCompatActivity {
         dump_structure.put("user_address", address);
         dump_structure.put("user_email", email);
         dump_structure.put("user_mobile_number", mobile);
+        dump_structure.put("user_lat_long",lat_long);
 
         user_Ref.push().setValue(dump_structure);
     }
+
+
+
 
     public boolean validate() {
             boolean valid = true;
