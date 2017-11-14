@@ -156,6 +156,22 @@ public class TaskInfo extends AppCompatActivity {
         }
     }
 
+     public Double computeDistance(LatLng latLngA, LatLng latLngB) {
+        Location locationA = new Location("Address 1");
+        locationA.setLatitude(latLngA.latitude);
+        locationA.setLongitude(latLngA.longitude);
+
+        Location locationB = new Location("Address 2");
+        locationB.setLatitude(latLngB.latitude);
+        locationB.setLongitude(latLngB.longitude);
+
+        double distance = locationA.distanceTo(locationB);
+        //Log.d("distance", distance + "");
+
+        return distance;
+
+    }
+
 
 
 
