@@ -96,6 +96,22 @@ public class LoginActivity extends AppCompatActivity {
         // [END auth_state_listener]
 
 
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            // User is signed in
+            Intent i = new Intent(LoginActivity.this, MainActivity.class);
+            Toast.makeText(getApplicationContext(), user.getEmail().toString() + " logged in",
+                    Toast.LENGTH_SHORT).show();
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(i);
+        } else {
+            //User is signed out
+            //Log.d(TAG, "onAuthStateChanged:signed_out");
+        }
+
+
+
+
 
     }
 
