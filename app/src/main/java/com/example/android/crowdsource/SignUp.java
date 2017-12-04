@@ -11,11 +11,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.location.places.AutocompleteFilter;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by avaniarora on 11/12/17.
@@ -34,6 +45,15 @@ public class SignUp extends AppCompatActivity {
     private EditText mReEnterPassword;
     private Button mSignUp;
     private TextView mLoginLink;
+    private LatLng mLocationLatLng;
+    int PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_2 = 2;
+    String name;
+    String address;
+    String email;
+    String mobile;
+    String password;
+    String reEnterPassword;
+    String lat_long;
 
     @Override
     public void onStart() {
@@ -52,6 +72,7 @@ public class SignUp extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_registration);
         mName = (EditText) findViewById(R.id.input_name);
@@ -61,7 +82,31 @@ public class SignUp extends AppCompatActivity {
         mPassword = (EditText) findViewById(R.id.input_password);
         mReEnterPassword = (EditText) findViewById(R.id.input_reEnterPassword);
         mSignUp = (Button) findViewById(R.id.btn_signup);
+
         mLoginLink = (TextView) findViewById(R.id.link_login);
+
+        mAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Hello", "Inside location");
+
+                try {
+
+                    AutocompleteFilter typeFilter = new AutocompleteFilter.Builder()
+                            .build();
+
+                    Intent intent =
+                            new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
+                                    .build(SignUp.this);
+                    startActivityForResult(intent,PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_2);
+
+                } catch (GooglePlayServicesRepairableException e) {
+                    e.printStackTrace();
+                } catch (GooglePlayServicesNotAvailableException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         mSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +125,7 @@ public class SignUp extends AppCompatActivity {
 
             }
         });
+
 
         //FIREBASE :
 
@@ -107,7 +153,29 @@ public class SignUp extends AppCompatActivity {
 
 
 
+
+
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE_ADDRESS_2) {
+            if (resultCode == RESULT_OK) {
+
+                Place place = PlaceAutocomplete.getPlace(this, data);
+
+                mLocationLatLng = place.getLatLng();
+                mAddress.setText(place.getName());
+
+            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
+
+                Toast.makeText(getApplicationContext(), PlaceAutocomplete.getStatus(this, data).toString(), Toast.LENGTH_LONG).show();
+
+            }
+        }
+    }
+
+
 
     public void signup() {
         if (!validate()) {
@@ -117,14 +185,18 @@ public class SignUp extends AppCompatActivity {
         }
 
         //mSignUp.setEnabled(false);
-        String name = mName.getText().toString();
-        String address = mAddress.getText().toString();
-        String email = mEmail.getText().toString().trim();
-        String mobile = mMobile.getText().toString();
-        String password = mPassword.getText().toString().trim();
-        String reEnterPassword = mReEnterPassword.getText().toString();
+        name = mName.getText().toString();
+        address = mAddress.getText().toString();
+        email = mEmail.getText().toString().trim();
+        mobile = mMobile.getText().toString();
+        password = mPassword.getText().toString().trim();
+        reEnterPassword = mReEnterPassword.getText().toString();
+        lat_long = mLocationLatLng.toString();
 
-        //TODO: write the credentials to database
+
+
+        //TODO: write email and password for authentication to firebase
+
 
         //Toast.makeText(getApplicationContext(), "Here's a toast "+ email,Toast.LENGTH_SHORT).show();
 
@@ -136,7 +208,7 @@ public class SignUp extends AppCompatActivity {
                             //FirebaseUser user = mAuth.getCurrentUser();
                             //updateUI(user);
                             Toast.makeText(getApplicationContext(), "Authentication successful, account created.",Toast.LENGTH_SHORT).show();
-
+                            write_user_information();
                         }
                         else{
                             Toast.makeText(getApplicationContext(), "Authentication failed",Toast.LENGTH_SHORT).show();
@@ -145,64 +217,82 @@ public class SignUp extends AppCompatActivity {
                 });
     }
 
+    public void write_user_information(){
+        //TODO: write user information to realtime database
+
+        FirebaseDatabase user_database = FirebaseDatabase.getInstance();
+        DatabaseReference user_Ref = user_database.getReference("user information");
+
+        Map<String, String> dump_structure = new HashMap<String, String>();
+        dump_structure.put("user_name", name);
+        dump_structure.put("user_address", address);
+        dump_structure.put("user_email", email);
+        dump_structure.put("user_mobile_number", mobile);
+        dump_structure.put("user_lat_long",lat_long);
+
+        user_Ref.push().setValue(dump_structure);
+    }
+
+
+
+
     public boolean validate() {
-            boolean valid = true;
+        boolean valid = true;
 
-            String name = mName.getText().toString();
-            String address = mAddress.getText().toString();
-            String email = mEmail.getText().toString();
-            String mobile = mMobile.getText().toString();
-            String password = mPassword.getText().toString();
-            String reEnterPassword = mReEnterPassword.getText().toString();
+        String name = mName.getText().toString();
+        String address = mAddress.getText().toString();
+        String email = mEmail.getText().toString();
+        String mobile = mMobile.getText().toString();
+        String password = mPassword.getText().toString();
+        String reEnterPassword = mReEnterPassword.getText().toString();
 
-            if (name.isEmpty() || name.length() < 3) {
-                mName.setError("at least 3 characters");
-                valid = false;
-            } else {
-                mName.setError(null);
-            }
+        if (name.isEmpty() || name.length() < 3) {
+            mName.setError("at least 3 characters");
+            valid = false;
+        } else {
+            mName.setError(null);
+        }
 
-            if (address.isEmpty()) {
-                mAddress.setError("Enter Valid Address");
-                valid = false;
-            } else {
-                mAddress.setError(null);
-            }
-
-
-            if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                mEmail.setError("enter a valid email address");
-                valid = false;
-            } else {
-                mEmail.setError(null);
-            }
-
-            if (mobile.isEmpty() || mobile.length()!=10) {
-                mMobile.setError("Enter Valid Mobile Number");
-                valid = false;
-            } else {
-                mMobile.setError(null);
-            }
-
-            if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-                mPassword.setError("between 4 and 10 alphanumeric characters");
-                valid = false;
-            } else {
-                mPassword.setError(null);
-            }
-
-            if (reEnterPassword.isEmpty() || reEnterPassword.length() < 4 || reEnterPassword.length() > 10 || !(reEnterPassword.equals(password))) {
-                mReEnterPassword.setError("Password Do not match");
-                valid = false;
-            } else {
-                mReEnterPassword.setError(null);
-            }
-
-            return valid;
+        if (address.isEmpty()) {
+            mAddress.setError("Enter Valid Address");
+            valid = false;
+        } else {
+            mAddress.setError(null);
         }
 
 
+        if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            mEmail.setError("enter a valid email address");
+            valid = false;
+        } else {
+            mEmail.setError(null);
+        }
 
+        if (mobile.isEmpty() || mobile.length()!=10) {
+            mMobile.setError("Enter Valid Mobile Number");
+            valid = false;
+        } else {
+            mMobile.setError(null);
+        }
 
+        if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
+            mPassword.setError("between 4 and 10 alphanumeric characters");
+            valid = false;
+        } else {
+            mPassword.setError(null);
+        }
+
+        if (reEnterPassword.isEmpty() || reEnterPassword.length() < 4 || reEnterPassword.length() > 10 || !(reEnterPassword.equals(password))) {
+            mReEnterPassword.setError("Password Do not match");
+            valid = false;
+        } else {
+            mReEnterPassword.setError(null);
+        }
+
+        return valid;
     }
 
+
+
+
+}

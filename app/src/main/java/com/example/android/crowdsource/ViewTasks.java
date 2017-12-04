@@ -12,6 +12,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+
 /**
  * Created by umang on 11/14/17.
  */
@@ -28,6 +32,9 @@ public class ViewTasks extends AppCompatActivity{
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
+                HashMap<Double, Task> hm = new HashMap<Double, Task>();
+                ArrayList<Double> distlist = new ArrayList<Double>();
                 if (dataSnapshot.hasChildren())
                 {
                     int count = 0;
@@ -38,11 +45,16 @@ public class ViewTasks extends AppCompatActivity{
                             for (DataSnapshot item : dataSnapshot1.getChildren())
                             {
                                 Task task = item.getValue(Task.class);
-                                viewtasks.append(task.toString());
+                                //viewtasks.append(task.toString());
                                 String ll = task.latlang.split(":")[1];
                                 String ll2 = ll.substring(2, ll.length()-1);
-                                viewtasks.append("Latitude: "+ ll2.split(",")[0]+"\n");
-                                viewtasks.append("Longitude: "+ ll2.split(",")[1]+ "\n\n");
+                                //viewtasks.append("Latitude: "+ ll2.split(",")[0]+"\n");
+                                //viewtasks.append("Longitude: "+ ll2.split(",")[1]+ "\n\n");
+
+                                LatLng current = new LatLng(36.999974, -122.064248);
+                                Double dist = computeDistance(current, new LatLng(new Double(ll2.split(",")[0]), new Double(ll2.split(",")[1])));
+                                distlist.add(dist);
+                                hm.put(dist, task);
                             }
                         }
                         else
@@ -52,6 +64,12 @@ public class ViewTasks extends AppCompatActivity{
                         }
                     }
                 }
+
+                Collections.sort(distlist);
+                for (int i = 0; i < distlist.size(); i++) {
+                    viewtasks.append(hm.get(distlist.get(i)).toString());
+                }
+
             }
             @Override
             public void onCancelled(DatabaseError error) {
