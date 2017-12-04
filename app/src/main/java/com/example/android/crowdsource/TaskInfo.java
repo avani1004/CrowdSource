@@ -17,6 +17,8 @@ import com.google.android.gms.location.places.AutocompleteFilter;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlaceAutocomplete;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -86,8 +88,13 @@ public class TaskInfo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Task task = new Task(mNameOfTask.getText().toString(), mDescription.getText().toString(),new Float(mPrice.getText().toString()),mLocation.getText().toString(),mLocationLatLng.toString());
-                myRef.child("tasks").child(UUID.randomUUID().toString()).setValue(task);
+
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                Task task = new Task(mNameOfTask.getText().toString(), mDescription.getText().toString(),new Float(mPrice.getText().toString()),mLocation.getText().toString(),mLocationLatLng.toString(),user.getEmail().toString());
+
+                //To get the key
+                String key = UUID.randomUUID().toString();
+                myRef.child("tasks").child(key).setValue(task);
                 //myRef.setValue("This should bloody work now too");
 
                 Toast.makeText(getBaseContext(), "Task Created Successfully", Toast.LENGTH_LONG).show();
