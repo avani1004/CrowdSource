@@ -104,6 +104,7 @@ public class TaskInfo extends AppCompatActivity {
 
                 //To get the key
                 key = UUID.randomUUID().toString();
+                //Toast.makeText(getApplicationContext(), key, Toast.LENGTH_SHORT).show();
                 myRef.child("tasks").child(key).setValue(task);
                 myRef1.addListenerForSingleValueEvent(new ValueEventListener(){
                     @Override
