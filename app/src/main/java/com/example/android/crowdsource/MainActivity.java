@@ -9,12 +9,14 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button mCreateTask;
     private Button mViewTask;
+    private Button mMyTasks;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mCreateTask = (Button) findViewById(R.id.create);
         mViewTask = (Button) findViewById(R.id.button2);
+        mMyTasks = (Button) findViewById(R.id.myTask);
 
         mCreateTask.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ViewTasks.class);
+                startActivity(intent);
+            }
+
+        });
+        mMyTasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MyTasks.class);
                 startActivity(intent);
             }
 

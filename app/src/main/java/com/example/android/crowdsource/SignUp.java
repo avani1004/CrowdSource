@@ -25,8 +25,11 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by avaniarora on 11/12/17.
@@ -220,17 +223,47 @@ public class SignUp extends AppCompatActivity {
     public void write_user_information(){
         //TODO: write user information to realtime database
 
-        FirebaseDatabase user_database = FirebaseDatabase.getInstance();
-        DatabaseReference user_Ref = user_database.getReference("user information");
 
-        Map<String, String> dump_structure = new HashMap<String, String>();
-        dump_structure.put("user_name", name);
-        dump_structure.put("user_address", address);
-        dump_structure.put("user_email", email);
-        dump_structure.put("user_mobile_number", mobile);
-        dump_structure.put("user_lat_long",lat_long);
+
+        FirebaseDatabase user_database = FirebaseDatabase.getInstance();
+        DatabaseReference user_Ref = user_database.getReference();
+
+
+
+        String user_name = name;
+        String user_address = address;
+        String user_email= email;
+
+        String user_mobile_number= mobile;
+
+        String user_lat_long= lat_long;
+
+        List<String>  user_task_keys= new ArrayList<String>();
+        user_task_keys.add(null);
+
+
+
+        User user = new User(user_name,user_address,user_email,user_mobile_number,user_lat_long,user_task_keys);
+
+        String key = UUID.randomUUID().toString();
+        user_Ref.child("user information").child(key).setValue(user);
+
+
+
+       /* Map<String, List<String>> dump_structure = new HashMap<String, List<String>>();
+
+
+
+        dump_structure.put("user_name", list1);
+        dump_structure.put("user_address", list2);
+        dump_structure.put("user_email", list3);
+        dump_structure.put("user_mobile_number", list4);
+        dump_structure.put("user_lat_long",list5);
+        dump_structure.put("user_task_keys",list6);
 
         user_Ref.push().setValue(dump_structure);
+*/
+
     }
 
 

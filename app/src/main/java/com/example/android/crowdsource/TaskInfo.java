@@ -47,8 +47,12 @@ public class TaskInfo extends AppCompatActivity {
     private EditText mLocation;
     private LatLng mLocationLatLng;
     private String mBaseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/";
-    List<Map> new_entry = new LinkedList<>();
+    //List<Map> new_entry = new LinkedList<>();
+    HashMap<String,List<String>> userTaskIdMap;
     private DatabaseReference myRef;
+    private DatabaseReference myRef1;
+    private FirebaseUser user;
+    private  String key;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -59,9 +63,15 @@ public class TaskInfo extends AppCompatActivity {
         mPrice = (EditText) findViewById(R.id.price);
         mLocation = (EditText) findViewById(R.id.location);
         Button done = (Button) findViewById(R.id.done);
+        userTaskIdMap = new HashMap<String, List<String>>();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         myRef = database.getReference();
+
+        FirebaseDatabase database1 = FirebaseDatabase.getInstance();
+        myRef1 = database1.getReference();
+
+
 
         mLocation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,15 +98,51 @@ public class TaskInfo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+               user = FirebaseAuth.getInstance().getCurrentUser();
 
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 Task task = new Task(mNameOfTask.getText().toString(), mDescription.getText().toString(),new Float(mPrice.getText().toString()),mLocation.getText().toString(),mLocationLatLng.toString(),user.getEmail().toString());
 
                 //To get the key
-                String key = UUID.randomUUID().toString();
+                key = UUID.randomUUID().toString();
                 myRef.child("tasks").child(key).setValue(task);
-                //myRef.setValue("This should bloody work now too");
+                myRef1.addListenerForSingleValueEvent(new ValueEventListener(){
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.hasChildren())
+                        {
+                            for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren())
+                            {
+                                if (dataSnapshot1.hasChildren() && dataSnapshot1.getKey().contains("user information"))
+                                {
+                                    for (DataSnapshot item : dataSnapshot1.getChildren())
 
+                                    {
+                                        //Log.d("check",item.getKey()+"");
+
+                                        User user1 = item.getValue(User.class);
+                                        List<String> taskKeys = user1.user_task_keys;
+                                        taskKeys.add(key);
+                                        //boolean value = user1.user_email.equals(user.getEmail());
+                                        //Log.d("value",value+"");
+                                        if(user1.user_email.equals(user.getEmail())){
+
+                                            myRef1.child("user information").child(item.getKey()).child("user_task_keys").setValue(taskKeys);
+                                        }
+                                       // Map<String, List<String>> store = item.getValue().;
+                                        //Log.d("check",item.getValue()+"");
+                                    }
+                        }
+                    }}}
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
+
+                //myRef.setValue("This should bloody work now too");
+                //if(user)
                 Toast.makeText(getBaseContext(), "Task Created Successfully", Toast.LENGTH_LONG).show();
 
                 Intent intent = new Intent(TaskInfo.this, MainActivity.class);

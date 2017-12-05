@@ -20,6 +20,7 @@
         <activity android:name=".TaskInfo" />
         <activity android:name=".SignUp" />
         <activity android:name=".ViewTasks" />
+        <activity android:name=".MyTasks"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
