@@ -16,13 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".TaskInfo"/>
-        <activity android:name=".SignUp"/>
-        <activity android:name=".ViewTasks"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".TaskInfo" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".ViewTasks" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAuUjBlcrcVh6_ohP6wAxaf_iBYyappdBg" />
+
+        <activity android:name=".TaskDescription"></activity>
     </application>
 
 </manifest>

@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/avaniarora/Documents/CrowdSource/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Users\bhumi\CrowdSource\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47338e7c5419359e96ad4800af824605e1a6c71d">
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0cec67d76e3535b33f8dc22ec87eea47881a42d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bhumi\CrowdSource\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/avaniarora/Documents/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_95d24094b9dbc3618a3029f8696f414b127df89c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/avaniarora/Documents/CrowdSource/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="223f7f7fafc9b5ca3c79d17e188459f1de25212b">
-        <dex dex="/Users/avaniarora/Documents/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d06b8863fd34091ea04be47b1c704ea54b1bd986/classes.dex" />
+        <dex dex="C:\Users\bhumi\CrowdSource\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1b4d73e5430389ef5661c9a4a904137a43c79f59\classes.dex" />
     </item>
 
 </items>
