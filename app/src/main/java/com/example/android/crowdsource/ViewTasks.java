@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -74,6 +75,8 @@ public class ViewTasks extends AppCompatActivity implements AdapterView.OnItemCl
                                 //viewtasks.append("Latitude: "+ ll2.split(",")[0]+"\n");
                                 //viewtasks.append("Longitude: "+ ll2.split(",")[1]+ "\n\n");
 
+
+
                                 LatLng current = new LatLng(36.999974, -122.064248);
                                 Double dist = computeDistance(current, new LatLng(new Double(ll2.split(",")[0]), new Double(ll2.split(",")[1])));
                                 distlist.add(dist);
@@ -94,7 +97,7 @@ public class ViewTasks extends AppCompatActivity implements AdapterView.OnItemCl
                     Task task = hm.get(distlist.get(i));
                     text.add(task.name);
                     Log.i("ViewTasks","What I was looking: " + task);
-                    sorted_task_list.put(i+1, task);
+                    sorted_task_list.put(i, task);
                 }
 
                 displayList();
@@ -148,11 +151,13 @@ public class ViewTasks extends AppCompatActivity implements AdapterView.OnItemCl
         intent.putExtra("description", current_task.description);
         intent.putExtra("charge", String.valueOf(current_task.charge));
 
-        Toast.makeText(getApplicationContext(), String.valueOf(current_task.location), Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), String.valueOf(position), Toast.LENGTH_SHORT).show();
         //current_task.
-        //intent.putExtra("address", String.valueOf(current_task.location));
+        intent.putExtra("location", String.valueOf(current_task.location));
         // Or / And
         intent.putExtra("id", id);
         startActivity(intent);
     }
 }
+
+

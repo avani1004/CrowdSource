@@ -23,9 +23,9 @@ public class TaskDescription extends AppCompatActivity {
         ArrayList<String> text = new ArrayList<String>();
 
 
-        text.add("Task Details:\n " + getIntent().getStringExtra("description"));
-        text.add("Money you earn in $:\n " + getIntent().getStringExtra("charge"));
-        text.add("Where you'll have to go:\n " + getIntent().getStringExtra("location"));
+        text.add("Task Details:\n\n" + getIntent().getStringExtra("description"));
+        text.add("Money you earn in $:\n\n" + getIntent().getStringExtra("charge"));
+        text.add("Where you'll have to go:\n\n" + getIntent().getStringExtra("location"));
         //Toast.makeText(getApplicationContext(), s,
          //       Toast.LENGTH_SHORT).show();
 
