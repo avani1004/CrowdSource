@@ -21,6 +21,8 @@
         <activity android:name=".SignUp" />
         <activity android:name=".ViewTasks" />
         <activity android:name=".MyTasks"/>
+        <activity android:name=".Submission"/>
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

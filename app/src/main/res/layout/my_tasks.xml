@@ -3,25 +3,51 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:id="@+id/scrollojt"
-    android:fillViewport="true" >
+    android:fillViewport="true"
 
-    <RelativeLayout
+    >
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="100dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasks created by you"
+            android:id = "@+id/tv"
+            android:textSize="20sp"
+            />
 
         <ListView
             android:id="@+id/listView1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200sp"
+            android:layout_below="@+id/tv"
+            android:layout_marginRight="50sp"
             >
         </ListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasks assigned to you"
+            android:layout_below="@+id/listView1"
+            android:id = "@+id/tv1"
+            android:textSize="20sp"
+            />
 
         <ListView
             android:id="@+id/listView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/listView1"
+            android:layout_height="200sp"
+            android:layout_below="@+id/tv1"
+            android:layout_marginRight="50sp"
             >
         </ListView>
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>

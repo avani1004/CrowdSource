@@ -134,7 +134,7 @@ public class ViewTasks extends AppCompatActivity implements AdapterView.OnItemCl
                     Task task = key_and_task.get(entry.getKey());
                     text.add(task.name);
                     Log.i("ViewTasks",entry.getKey()+" ==== "+entry.getValue());
-                    sorted_task_list.put(i, key);
+                    sorted_task_list.put(i, entry.getKey());
                     ++i;
                 }
 

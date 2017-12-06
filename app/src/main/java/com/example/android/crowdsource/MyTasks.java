@@ -1,5 +1,6 @@
 package com.example.android.crowdsource;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -78,6 +79,7 @@ public class MyTasks extends AppCompatActivity implements AdapterView.OnItemClic
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+        //Intent intent = new Intent(this,TaskAccepted.class);
+        //startActivity(intent);
     }
 }
