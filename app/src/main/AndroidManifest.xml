@@ -22,6 +22,8 @@
         <activity android:name=".ViewTasks" />
         <activity android:name=".MyTasks"/>
         <activity android:name=".Submission"/>
+        <activity android:name=".PeopleAppliedToTasks"/>
+        <activity android:name=".NotifyAssignee"/>
 
 
         <meta-data

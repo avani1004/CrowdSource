@@ -18,49 +18,60 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by avaniarora on 12/4/17.
  */
 
-public class MyTasks extends AppCompatActivity implements AdapterView.OnItemClickListener{
+public class MyTasks extends AppCompatActivity {
    private ListView mListView1;
     private ListView mListView2;
     ArrayList<String> list;
+    ArrayList<String> list1;
+    HashMap<String,String> key_task_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_tasks);
-        mListView1 =(ListView) findViewById(R.id.listView1);
+        mListView1 = (ListView) findViewById(R.id.listView1);
         mListView2 = (ListView) findViewById(R.id.listView2);
         list = new ArrayList<String>();
-        mListView1.setOnItemClickListener(this);
+        list1 = new ArrayList<String>();
+        key_task_name = new HashMap<String, String>();
+        //mListView1.setOnItemClickListener(this);
+        //mListView2.setOnClickListener(this);
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
+
+       // FirebaseDatabase database = ;
+        final DatabaseReference myRef2 = FirebaseDatabase.getInstance().getReference("tasks");
+
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                if (dataSnapshot.hasChildren())
-                {
-                    for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren())
-                    {
-                        if (dataSnapshot1.hasChildren() && dataSnapshot1.getKey().contains("tasks"))
-                        {
-                            for (DataSnapshot item : dataSnapshot1.getChildren())
-                            {
+                if (dataSnapshot.hasChildren()) {
+                    for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+                        if (dataSnapshot1.hasChildren() && dataSnapshot1.getKey().contains("tasks")) {
+                            for (DataSnapshot item : dataSnapshot1.getChildren()) {
+                                String key_task = item.getKey();
+                                //Log.d("key",key_task);
                                 Task task = item.getValue(Task.class);
                                 String email = task.email;
-                                //Log.d("name",FirebaseAuth.getInstance().getCurrentUser().getEmail()+"");
-                                if(email.equals(FirebaseAuth.getInstance().getCurrentUser().getEmail())){
-                                    //Log.d("name",task.name);
 
+                                //Log.d("name",FirebaseAuth.getInstance().getCurrentUser().getEmail()+"");
+                                if (email.equals(FirebaseAuth.getInstance().getCurrentUser().getEmail())) {
+                                    //Log.d("name",task.name);
+                                    key_task_name.put(key_task, task.name);
                                     list.add(task.name);
                                 }
                             }
                         }
                     }
-    }
+                }
                 displayList();
             }
 
@@ -70,6 +81,69 @@ public class MyTasks extends AppCompatActivity implements AdapterView.OnItemClic
             }
         });
 
+        mListView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,
+                                    long id) {
+
+                Intent intent = new Intent(MyTasks.this,PeopleAppliedToTasks.class);
+                String selectedFromList = (mListView1.getItemAtPosition(position).toString());
+                for(Map.Entry<String,String> value: key_task_name.entrySet()){
+                    if(value.getValue().equals(selectedFromList)) {
+                        intent.putExtra("key",value.getKey());
+                        intent.putExtra("task_name",selectedFromList);
+                        break;
+                    }
+
+                }
+                startActivity(intent);
+
+            }
+        });
+
+
+
+        DatabaseReference myRef1 = FirebaseDatabase.getInstance().getReference("AcceptedJobs");
+
+        myRef1.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.hasChildren()) {
+                    for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+
+                        if(FirebaseAuth.getInstance().getCurrentUser().getEmail().equals(dataSnapshot1.child("email").getValue().toString())){
+
+                            list1.add(dataSnapshot1.child("task_name").getValue().toString());
+
+                        }
+                    }
+                }
+
+                displayList1();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+
+        });
+
+        mListView2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,
+                                    long id) {
+
+                Log.d("hello","hello");
+
+                //String item = ((TextView)view).getText().toString();
+
+                //Toast.makeText(getBaseContext(), item, Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+
     }
 
     public void displayList(){
@@ -77,9 +151,23 @@ public class MyTasks extends AppCompatActivity implements AdapterView.OnItemClic
         mListView1.setAdapter(adapter);
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        //Intent intent = new Intent(this,TaskAccepted.class);
-        //startActivity(intent);
+    public void displayList1(){
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list1 );
+        mListView2.setAdapter(adapter);
     }
+
+   /* @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Intent intent = new Intent(this,PeopleAppliedToTasks.class);
+        String selectedFromList = (mListView1.getItemAtPosition(i).toString());
+        for(Map.Entry<String,String> value: key_task_name.entrySet()){
+            if(value.getValue().equals(selectedFromList)) {
+                intent.putExtra("key",value.getKey());
+                intent.putExtra("task_name",selectedFromList);
+                break;
+            }
+
+    }
+        startActivity(intent);
+    }*/
 }
