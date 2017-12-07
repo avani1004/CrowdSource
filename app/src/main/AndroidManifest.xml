@@ -25,6 +25,7 @@
         <activity android:name=".PeopleAppliedToTasks"/>
         <activity android:name=".AssignerTaskPage"/>
         <activity android:name=".AssigneeTaskPage"/>
+        <activity android:name=".PostReview"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

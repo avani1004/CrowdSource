@@ -10,25 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c6e65fd-bb73-4be7-8abf-dfdcd2c43fcb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CrowdSource.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/MyTasks.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/MyTasks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PeopleAppliedToTasks.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PeopleAppliedToTasks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/people_applied_tasks.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/people_applied_tasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignerTaskPage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignerTaskPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/assigner_task_page.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/assigner_task_page.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <ignored path="CrowdSource.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,47 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewTasks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/ViewTasks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeopleAppliedToTasks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PeopleAppliedToTasks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-              <folding>
-                <element signature="e#3279#3644#0" expanded="true" />
-                <element signature="e#3643#3644#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyTasks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/MyTasks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
-              <caret line="149" column="62" lean-forward="false" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="62" />
-              <folding>
-                <element signature="e#3434#4224#0" expanded="true" />
-                <element signature="e#4223#4224#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+            <state relative-caret-position="155">
+              <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -102,23 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssigneeTaskPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssigneeTaskPage.java">
+      <file leaf-file-name="task_details.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/task_details.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="112" column="57" lean-forward="false" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="assignee_task_page.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/assignee_task_page.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+            <state relative-caret-position="388">
+              <caret line="45" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -127,18 +72,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PostReview.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PostReview.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1833#4822#0" expanded="true" />
+                <element signature="e#4821#4822#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AssignerTaskPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignerTaskPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="70" column="82" lean-forward="false" selection-start-line="70" selection-start-column="82" selection-end-line="70" selection-end-column="82" />
+            <state relative-caret-position="-318">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4034#4035#0" expanded="true" />
-                <element signature="e#4059#4060#0" expanded="true" />
-                <element signature="e#4095#4096#0" expanded="true" />
-                <element signature="e#4123#4124#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PeopleAppliedToTasks.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PeopleAppliedToTasks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-211">
+              <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,7 +111,7 @@
       <file leaf-file-name="AssignedTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignedTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state relative-caret-position="332">
               <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding />
             </state>
@@ -156,8 +121,8 @@
       <file leaf-file-name="assigner_task_page.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/assigner_task_page.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="245">
+              <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -166,11 +131,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="people_applied_tasks.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/people_applied_tasks.xml">
+      <file leaf-file-name="Review.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/Review.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="11" column="102" lean-forward="false" selection-start-line="11" selection-start-column="102" selection-end-line="11" selection-end-column="102" />
+            <state relative-caret-position="32">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_reviews.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/post_reviews.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -179,20 +154,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="27" column="11" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="27" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.class</find>
       <find>myRef</find>
+      <find>.class</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2417,13 +2402,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/TaskDescription.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignedTask.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/assignee_task_page.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/MyTasks.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PeopleAppliedToTasks.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/people_applied_tasks.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/assigner_task_page.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignerTaskPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssigneeTaskPage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/Review.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/assigner_task_page.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/post_reviews.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PostReview.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignerTaskPage.java" />
       </list>
     </option>
   </component>
@@ -2629,7 +2617,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512649446915" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512671479430" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2677,7 +2665,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512649446915" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512671479430" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2860,7 +2848,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512649446916" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512671479431" />
       </method>
     </configuration>
     <list size="1">
@@ -3001,7 +2989,7 @@
         <state relative-caret-position="1455">
           <caret line="129" column="141" lean-forward="false" selection-start-line="129" selection-start-column="141" selection-end-line="129" selection-end-column="141" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3013,9 +3001,7 @@
           <folding>
             <element signature="e#1511#1519#0" expanded="true" />
             <element signature="e#2030#2038#0" expanded="true" />
-            <element signature="e#2307#5240#0" expanded="true" />
             <element signature="e#2878#2886#0" expanded="true" />
-            <element signature="e#5239#5240#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3042,30 +3028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/TaskInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="129" column="141" lean-forward="false" selection-start-line="129" selection-start-column="141" selection-end-line="129" selection-end-column="141" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/TaskDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding>
-            <element signature="e#1511#1519#0" expanded="true" />
-            <element signature="e#2030#2038#0" expanded="true" />
-            <element signature="e#2307#5240#0" expanded="true" />
-            <element signature="e#2878#2886#0" expanded="true" />
-            <element signature="e#5239#5240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/people_applied_tasks.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -3077,52 +3039,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/assigner_task_page.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignedTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/ViewTasks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PeopleAppliedToTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-          <folding>
-            <element signature="e#3279#3644#0" expanded="true" />
-            <element signature="e#3643#3644#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3137,16 +3058,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignerTaskPage.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssigneeTaskPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="70" column="82" lean-forward="false" selection-start-line="70" selection-start-column="82" selection-end-line="70" selection-end-column="82" />
+        <state relative-caret-position="277">
+          <caret line="112" column="57" lean-forward="false" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4034#4035#0" expanded="true" />
-            <element signature="e#4059#4060#0" expanded="true" />
-            <element signature="e#4095#4096#0" expanded="true" />
-            <element signature="e#4123#4124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3162,12 +3079,149 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssigneeTaskPage.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="112" column="57" lean-forward="false" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
+        <state relative-caret-position="-123">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/Submission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/TaskDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding>
+            <element signature="e#1511#1519#0" expanded="true" />
+            <element signature="e#2030#2038#0" expanded="true" />
+            <element signature="e#2878#2886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/TaskInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="105" column="51" lean-forward="true" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="27" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/task_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="45" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/assigner_task_page.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/post_reviews.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignedTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/AssignerTaskPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-318">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PeopleAppliedToTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/crowdsource/PostReview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1833#4822#0" expanded="true" />
+            <element signature="e#4821#4822#0" expanded="true" />
           </folding>
         </state>
       </provider>

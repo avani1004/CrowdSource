@@ -1,8 +1,11 @@
 package com.example.android.crowdsource;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,17 +23,28 @@ import com.google.firebase.database.ValueEventListener;
 public class AssignerTaskPage extends AppCompatActivity{
 
     private TextView tp;
-    public String email;
+    public String task_name;
+    private Button mPostReview;
+    private Button mPayByCash;
+    private Button mPayViaVenmo;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.assigner_task_page);
 
         tp = (TextView) findViewById(R.id.textView2);
-        tp.setText("Hello World");
+//        tp.setText("Hello World");
+
+        mPostReview = (Button) findViewById(R.id.post_review);
+        mPayByCash = (Button) findViewById(R.id.pay_cash);
+        mPayViaVenmo = (Button) findViewById(R.id.pay_venmo);
+
+        mPostReview.setVisibility(View.GONE);
+        mPayByCash.setVisibility(View.GONE);
+        mPayViaVenmo.setVisibility(View.GONE);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("AssignedTasks");
-//        final DatabaseReference myRef2 = database.getReference("tasks");
+        final DatabaseReference myRef2 = database.getReference("tasks");
 
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -40,11 +54,10 @@ public class AssignerTaskPage extends AppCompatActivity{
                 if (dataSnapshot.hasChildren()) {
 //                    String key = "pqr";
                     String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-                    String assignee = "default@ucsc.edu";
-//                    setAssignerEmail(myRef2, taskKey); //Sorry, not being used
-                    myRef.child(taskKey).setValue(new AssignedTask("Repair Laptop", true, false, false, false, assignee,email ));
-
-                    Log.d("AssignerTask", "New AssignedTask created");
+                    String assignee = "default@ucsc.edu"; //TODO Ask Avani to get me the Assignee email
+                    retrieveTaskName(myRef2, taskKey);
+                    myRef.child(taskKey).setValue(new AssignedTask(getTask_name(), true, false, false, false, assignee,email ));
+                    Log.d("AssignerTask", "New AssignedTask created with task name "+ getTask_name());
                 }
             }
 
@@ -68,8 +81,13 @@ public class AssignerTaskPage extends AppCompatActivity{
 
                 Log.d("AssignerTask", "The DataSnapshot has key " + dataSnapshot.getKey() + "changed");
 
-                if (dataSnapshot.child("completedFlag").toString().contains("true"))
+                if (dataSnapshot.child("completedFlag").toString().contains("true")) {
                     tp.setText("Assignee has completed task");
+                    mPostReview.setVisibility(View.VISIBLE);
+                    mPayByCash.setVisibility(View.VISIBLE);
+                    mPayViaVenmo.setVisibility(View.VISIBLE);
+
+                }
 
                 else if (dataSnapshot.child("acknowledgedFlag").toString().contains("true"))
                     tp.setText("Assignee has acknowledged task");
@@ -93,36 +111,49 @@ public class AssignerTaskPage extends AppCompatActivity{
 
         });
 
+        mPostReview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AssignerTaskPage.this, PostReview.class);
+                //TODO Pass beingReviewed via Intent
+                startActivity(intent);
+            }
+
+        });
+
     }
 
-    public void setAssignerEmail(DatabaseReference myRef2, final String taskkey)
+    public void retrieveTaskName(DatabaseReference myRef2, final String taskkey)
     {
         String ans = "";
         myRef2.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange (DataSnapshot dataSnapshot){
 
-                if(dataSnapshot.child(taskkey).exists())
-                     setEmail(dataSnapshot.child(taskkey).child("email").getValue().toString());
-
+                if(dataSnapshot.child(taskkey).exists()) {
+                    String s  = dataSnapshot.child(taskkey).child("name").getValue().toString();
+                    Log.d("AssignerTaskPage", "Retreiving Task Name as "+ s);
+                    setTask_name(s);
+                    Log.d("AssignerTaskPage", "Verifying Task Name as "+ getTask_name());
+                }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
-                setEmail("default@ucsc.edu");
+                setTask_name("Task abc");
             }
         });
     }
 
-    public void setEmail(String s)
+    public void setTask_name(String s)
     {
-        email = s;
+        task_name = s;
     }
 
-    public String getEmail()
+    public String getTask_name()
     {
-        return email;
+        return task_name;
     }
 
 
