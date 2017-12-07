@@ -31,14 +31,17 @@ import java.util.UUID;
 public class PeopleAppliedToTasks extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView mListView1;
-    private List<String> email_address_list;
+    private ArrayList<String> email_address_list;
     //private HashMap<String,String> task_id_email;
     private DatabaseReference myRef1;
     private DatabaseReference myRef2;
+   // private DatabaseReference myRef3;
     private TextView tp;
     private Button mStartTask;
+    private Button mViewReviews;
     String key1;
     private String selectedFromList;
+    private String email1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +57,14 @@ public class PeopleAppliedToTasks extends AppCompatActivity implements AdapterVi
         mListView1.setOnItemClickListener(this);
         tp = (TextView) findViewById(R.id.textview1);
         mStartTask = (Button) findViewById(R.id.start_task);
+        mViewReviews = (Button) findViewById(R.id.view_review);
         mStartTask.setVisibility(View.GONE);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("ApplyToJob");
 
         myRef2 = FirebaseDatabase.getInstance().getReference("AcceptedJobs");
+        //myRef3 = FirebaseDatabase.getInstance().getReference("reviews");
 
 
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -96,6 +101,37 @@ public class PeopleAppliedToTasks extends AppCompatActivity implements AdapterVi
             }
         });
 
+        mViewReviews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(PeopleAppliedToTasks.this,ViewReviews.class);
+                intent.putStringArrayListExtra("list",email_address_list);
+                startActivity(intent);
+
+               /* for(String email: email_address_list){
+                    email1 = email;
+                    myRef3.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            if (dataSnapshot.hasChildren()) {
+
+                                for (DataSnapshot item : dataSnapshot.getChildren()) {
+                                    if(item.child("beingReviewed").getValue().toString().equals(email1)){
+
+                                    }
+                                }
+                            }}
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+                }*/
+
+            }});
+
     }
 
             public void displayList() {
@@ -114,6 +150,7 @@ public class PeopleAppliedToTasks extends AppCompatActivity implements AdapterVi
                 Toast.makeText(getApplicationContext(), "The user "+ selectedFromList + " has been notified ", Toast.LENGTH_LONG).show();
                 mListView1.setVisibility(View.GONE);
                 tp.setVisibility(View.GONE);
+                mViewReviews.setVisibility(View.GONE);
                 mStartTask.setVisibility(View.VISIBLE);
 //                intent.putExtra("name", selectedFromList);
 //                startActivity(intent);

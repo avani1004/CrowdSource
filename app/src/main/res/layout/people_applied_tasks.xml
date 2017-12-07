@@ -23,4 +23,11 @@
         android:layout_width="match_parent"
         android:layout_height="300dp" />
 
+    <Button
+        android:id="@+id/view_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/applied_people_list"
+        android:text="View Reviews" />
+
 </LinearLayout>
