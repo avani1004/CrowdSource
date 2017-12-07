@@ -201,7 +201,7 @@ public class ViewTasks extends AppCompatActivity implements AdapterView.OnItemCl
         intent.putExtra("description", current_task.description);
         intent.putExtra("charge", String.valueOf(current_task.charge));
 
-        Toast.makeText(getApplicationContext(), String.valueOf(position), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), String.valueOf(position), Toast.LENGTH_SHORT).show();
         //current_task.
         intent.putExtra("location", String.valueOf(current_task.location));
         // Or / And

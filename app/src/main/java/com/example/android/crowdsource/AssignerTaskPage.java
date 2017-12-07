@@ -114,6 +114,17 @@ public class AssignerTaskPage extends AppCompatActivity{
 
         });
 
+        mPayViaVenmo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.venmo");
+                if (launchIntent != null) {
+                    startActivity(launchIntent);//null pointer check in case package name was not found
+                }
+            }
+
+        });
+
         mPostReview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
