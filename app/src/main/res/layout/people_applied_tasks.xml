@@ -6,13 +6,21 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textview1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="People who have applied for the task"/>
+        android:text="People who have applied for the task. Click on user to assign him/her the task"/>
 
+
+    <Button
+        android:id="@+id/start_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Task" />
 
     <ListView
         android:id="@+id/applied_people_list"
         android:layout_width="match_parent"
         android:layout_height="300dp" />
+
 </LinearLayout>

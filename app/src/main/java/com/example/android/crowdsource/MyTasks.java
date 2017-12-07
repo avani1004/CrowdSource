@@ -30,7 +30,10 @@ public class MyTasks extends AppCompatActivity {
     private ListView mListView2;
     ArrayList<String> list;
     ArrayList<String> list1;
+    //ArrayList<String> list2;
     HashMap<String,String> key_task_name;
+    HashMap<String,String> key_task_name2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +43,9 @@ public class MyTasks extends AppCompatActivity {
         mListView2 = (ListView) findViewById(R.id.listView2);
         list = new ArrayList<String>();
         list1 = new ArrayList<String>();
+        //list2 = new ArrayList<String>();
         key_task_name = new HashMap<String, String>();
+        key_task_name2 = new HashMap<String, String>();
         //mListView1.setOnItemClickListener(this);
         //mListView2.setOnClickListener(this);
 
@@ -110,10 +115,12 @@ public class MyTasks extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.hasChildren()) {
                     for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+                        //String key_task = dataSnapshot1.getKey();;
 
                         if(FirebaseAuth.getInstance().getCurrentUser().getEmail().equals(dataSnapshot1.child("email").getValue().toString())){
 
                             list1.add(dataSnapshot1.child("task_name").getValue().toString());
+                            key_task_name2.put(dataSnapshot1.child("key").getValue().toString(), dataSnapshot1.child("task_name").getValue().toString());
 
                         }
                     }
@@ -134,8 +141,19 @@ public class MyTasks extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
 
-                Log.d("hello","hello");
+                //Log.d("hello","hello");
+                Intent intent = new Intent(MyTasks.this,AssigneeTaskPage.class);
+                String selectedFromList = (mListView2.getItemAtPosition(position).toString());
+                for(Map.Entry<String,String> value: key_task_name2.entrySet()){
+                    if(value.getValue().equals(selectedFromList)) {
+                        //Log.d("key",value.getKey());
+                        intent.putExtra("key",value.getKey());
+                        intent.putExtra("task_name",selectedFromList);
+                        break;
+                    }
 
+                }
+                startActivity(intent);
                 //String item = ((TextView)view).getText().toString();
 
                 //Toast.makeText(getBaseContext(), item, Toast.LENGTH_LONG).show();

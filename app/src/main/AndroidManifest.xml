@@ -23,8 +23,8 @@
         <activity android:name=".MyTasks"/>
         <activity android:name=".Submission"/>
         <activity android:name=".PeopleAppliedToTasks"/>
-        <activity android:name=".NotifyAssignee"/>
-
+        <activity android:name=".AssignerTaskPage"/>
+        <activity android:name=".AssigneeTaskPage"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
