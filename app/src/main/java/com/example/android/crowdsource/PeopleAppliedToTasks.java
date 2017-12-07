@@ -38,6 +38,7 @@ public class PeopleAppliedToTasks extends AppCompatActivity implements AdapterVi
     private TextView tp;
     private Button mStartTask;
     String key1;
+    private String selectedFromList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +90,8 @@ public class PeopleAppliedToTasks extends AppCompatActivity implements AdapterVi
             public void onClick(View view) {
                 Intent intent = new Intent(PeopleAppliedToTasks.this, AssignerTaskPage.class);
                 intent.putExtra("key",key1);
-                //Log.d("key1",getIntent().getStringExtra("key"));
+                intent.putExtra("email", selectedFromList);
+                //Log.d("email",selectedFromList);
                 startActivity(intent);
             }
         });
@@ -105,7 +107,7 @@ public class PeopleAppliedToTasks extends AppCompatActivity implements AdapterVi
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 //                Intent intent = new Intent();
 //                intent.setClass(this, NotifyAssignee.class);
-                String selectedFromList = (mListView1.getItemAtPosition(i).toString());
+               selectedFromList = (mListView1.getItemAtPosition(i).toString());
                 //Log.d("selected",selectedFromList);
                 PopulateAcceptedTasksList populateAcceptedTasksList = new PopulateAcceptedTasksList(selectedFromList,getIntent().getStringExtra("key"),getIntent().getStringExtra("task_name"));
                 myRef2.child(UUID.randomUUID().toString()).setValue(populateAcceptedTasksList);

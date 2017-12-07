@@ -56,7 +56,7 @@ public class PostReview extends AppCompatActivity{
             public void onClick(View view) {
 
                 reviewer = FirebaseAuth.getInstance().getCurrentUser().getEmail().toString();
-                beingReviewed = "default@ucsc.edu"; //Need to get this from intent //TODO Tell Avani to do intent here
+                beingReviewed = getIntent().getStringExtra("email"); //Need to get this from intent
                 String key = UUID.randomUUID().toString();
 
                 Review review = new Review(mTitle.getText().toString(), mDescription.getText().toString(),new Float(mRating.getText().toString()), reviewer,beingReviewed);

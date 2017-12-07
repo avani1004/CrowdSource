@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/umang/Documents/Fall2017/MobileApps/CS2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a7648a028d786e730125b53e0a4344e5364333c3">
-        <dex dex="/Users/umang/Documents/Fall2017/MobileApps/CS2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_66acd339d1fd54daa8a2fca66cb47a3f1497cf2d/classes.dex" />
+        sha1="a9f5212a84f5b15751aad31b9f53b64081f57bed">
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c81a1df5505109c7dedf5fa2f625087580b4e5b1/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/umang/Documents/Fall2017/MobileApps/CS2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/umang/Documents/Fall2017/MobileApps/CS2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_01fe3c96930decc37f9b309e8a8c634b70bce88a/classes.dex" />
+        <dex dex="/Users/avaniarora/Desktop/CrowdSource/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ee77c8428eb1974535283df8d04ac6816733a8c5/classes.dex" />
     </item>
 
 </items>

@@ -27,6 +27,8 @@ public class AssignerTaskPage extends AppCompatActivity{
     private Button mPostReview;
     private Button mPayByCash;
     private Button mPayViaVenmo;
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.assigner_task_page);
@@ -54,7 +56,8 @@ public class AssignerTaskPage extends AppCompatActivity{
                 if (dataSnapshot.hasChildren()) {
 //                    String key = "pqr";
                     String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-                    String assignee = "default@ucsc.edu"; //TODO Ask Avani to get me the Assignee email
+                   String assignee = getIntent().getStringExtra("email");
+                   // Log.d("assignee", assignee);
                     retrieveTaskName(myRef2, taskKey);
                     myRef.child(taskKey).setValue(new AssignedTask(getTask_name(), true, false, false, false, assignee,email ));
                     Log.d("AssignerTask", "New AssignedTask created with task name "+ getTask_name());
@@ -115,7 +118,9 @@ public class AssignerTaskPage extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AssignerTaskPage.this, PostReview.class);
-                //TODO Pass beingReviewed via Intent
+                intent.putExtra("email",getIntent().getStringExtra("email"));
+
+
                 startActivity(intent);
             }
 
