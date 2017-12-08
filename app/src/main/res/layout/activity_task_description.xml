@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_margin="50dp"
-    android:orientation="vertical">
+    android:layout_margin="40dp"
+    android:orientation="vertical"
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -17,13 +18,16 @@
         android:layout_height="300dp" />
 
 
+
+
     <Button
         android:id="@+id/apply_button"
-
-        android:layout_width="144dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:text="I want this job" />
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:textColor="#fff"
+        android:layout_marginLeft="110dp"
+        android:text="Apply"
+        android:background="@drawable/circle" />
 
 </LinearLayout>
