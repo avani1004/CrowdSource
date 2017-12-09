@@ -49,7 +49,7 @@ public class TaskDescription extends AppCompatActivity {
         text.add("\nTask Details:\n " + getIntent().getStringExtra("description"));
         text.add("\nMoney you earn in $:\n " + getIntent().getStringExtra("charge"));
         text.add("\nWhere you'll have to go:\n " + getIntent().getStringExtra("location"));
-        text.add("\nThis is the task key:\n " + getIntent().getStringExtra("task key"));
+        //text.add("\nThis is the task key:\n " + getIntent().getStringExtra("task key"));
         //Toast.makeText(getApplicationContext(), s,
         //       Toast.LENGTH_SHORT).show();
 

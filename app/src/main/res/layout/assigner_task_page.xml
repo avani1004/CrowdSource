@@ -16,7 +16,7 @@
 
 
         <Button
-            android:id="@+id/pay_cash"
+            android:id="@+id/pay_venmo"
             android:layout_marginTop="30dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -28,7 +28,7 @@
             android:textColor="#fff" />
 
         <Button
-            android:id="@+id/pay_venmo"
+            android:id="@+id/pay_cash"
             android:layout_marginTop="30dp"
             android:layout_width="100dp"
             android:layout_height="100dp"

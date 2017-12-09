@@ -80,7 +80,7 @@ public class ViewTasks extends AppCompatActivity implements AdapterView.OnItemCl
                                 Task task = item.getValue(Task.class);
                                 key = myRef.child("tasks").child(item.getKey()).toString();
 
-                                Toast.makeText(getApplicationContext(), key, Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(getApplicationContext(), key, Toast.LENGTH_SHORT).show();
 
                                 //viewtasks.append(task.toString());
                                 String ll = task.latlang.split(":")[1];
@@ -92,7 +92,8 @@ public class ViewTasks extends AppCompatActivity implements AdapterView.OnItemCl
 
 
 
-                                LatLng current = new LatLng(36.999974, -122.064248);
+//                                LatLng current = new LatLng(36.999974, -122.064248);
+                                LatLng current = new LatLng(36.997808, -122.056670);
                                 Double dist = computeDistance(current, new LatLng(new Double(ll2.split(",")[0]), new Double(ll2.split(",")[1])));
 
                                 keys_and_dist.put(key, dist);

@@ -39,7 +39,7 @@
             android:textColor="#fff" />
 
         <Button
-            android:id="@+id/myTasks"
+            android:id="@+id/myTask"
             android:layout_marginTop="30dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -47,7 +47,7 @@
             android:background="@drawable/circle"
             android:drawableTop="@android:drawable/ic_menu_agenda"
             android:paddingTop="20dp"
-            android:text="My\nTaks"
+            android:text="My\nTasks"
             android:textColor="#fff" />
 
 
